@@ -1,0 +1,505 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   */
+
+   html, body, div, span, applet, object, iframe,
+   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+   a, abbr, acronym, address, big, cite, code,
+   del, dfn, em, img, ins, kbd, q, s, samp,
+   small, strike, strong, sub, sup, tt, var,
+   b, u, i, center,
+   dl, dt, dd, ol, ul, li,
+   fieldset, form, label, legend,
+   table, caption, tbody, tfoot, thead, tr, th, td,
+   article, aside, canvas, details, embed, 
+   figure, figcaption, footer, header, hgroup, 
+   menu, nav, output, ruby, section, summary,
+   time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+  /* HTML5 display-role reset for older browsers */
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  /* ---------------------------------------------------------------------------------------------------------------- */
+
+  @font-face {
+    font-family: 'museo_sans300';
+    src: url('fonts/museosans-300-webfont.eot');
+    src: url('fonts/museosans-300-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/museosans-300-webfont.woff2') format('woff2'),
+    url('fonts/museosans-300-webfont.woff') format('woff'),
+    url('fonts/museosans-300-webfont.ttf') format('truetype'),
+    url('fonts/museosans-300-webfont.svg#museo_sans300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+  }
+
+  @font-face {
+    font-family: 'Museo-300';
+    src: url('fonts/Museo-300.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Museo-300.otf')  format('opentype'),
+    url('fonts/Museo-300.woff') format('woff'),
+    url('fonts/Museo-300.ttf')  format('truetype'),
+    url('fonts/Museo-300.svg#Museo-300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  /* common */
+
+  body
+  {
+    font-family: 'museo_sans300';
+    color: #414042;
+    background: #f1f2f2;
+    font-size: 22px;
+  }
+  .wrapper
+  {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%
+  }
+  .fp-tableCell
+  {
+    position: relative;
+  }
+  .clearfix:after
+  {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  a
+  {
+    text-decoration: none;
+    color: inherit;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  textarea
+  {
+    border:0;
+    outline: none;
+  }
+  input:focus,input:active,textarea:focus
+  {
+    outline: none;
+  }
+
+
+  /* sections */
+
+  .section
+  {
+    text-align: center;
+    position: relative;
+  }
+  .section h1
+  {
+    font-family: 'Museo-300';
+    font-size: 65px;
+    position: absolute;
+    top: 100px;
+    width: 100%
+  }
+  .section h2
+  {
+    line-height: 35px;
+    margin: 0 auto;
+    font-size: 30px;
+    position: absolute;
+    bottom: 120px;
+    width: 100%
+  }
+  .section h2 span
+  {
+    color: #d83454
+  }
+  .section .next
+  {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    border: 2px solid #ffffff;
+    background: url(../images/down_arrow_w.png) center center no-repeat #d83454;
+    position: absolute;
+    bottom: 30px;
+    left: calc( 50% - 22px );
+  }
+  .section .next.shadow
+  {
+    border-width: 3px;
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.22)
+  }
+  .section .next.black
+  {
+    border-color: #414042;
+    background: url(../images/down_arrow.png) center center no-repeat transparent;
+  }
+
+  .section.header
+  {
+    background: #d83454;
+  }
+  .section.header .wrapper
+  {
+    background: url(../images/branding.png) center center no-repeat;
+  }
+  .section.header h3
+  {
+    color: #ffffff;
+    line-height: 28px;
+    position: absolute;
+    bottom: 150px;
+    width: 100%
+  }
+  .section.header h3 span
+  { 
+    max-width: 490px;
+    display: inline-block;
+  }
+  .section.design .wrapper
+  {
+    background: url(../images/design_only.jpg) center center no-repeat;
+  }
+  .section.build .wrapper
+  {
+    background: url(../images/build_only.jpg) center center no-repeat;
+  }
+  .section.both .wrapper
+  {
+    background: url(../images/both.jpg) center center no-repeat;
+  }
+
+
+  /* services */
+
+  .section.services
+  { 
+    background: #ffffff
+  }
+  .section.services .wrapper
+  {
+    width: 980px;
+    left: calc(50% - 490px)
+  }
+  .services ul
+  {
+    overflow: hidden;
+    padding-top: 300px
+  }
+  .services li
+  {
+    width: 245px;
+    height: 245px;
+    float: left;
+    position: relative;
+    padding-top: 245px;
+  }
+  .services li:after
+  {
+    position: absolute;
+    content: ' ';
+    border-radius: 50%;
+    background: #d83454 no-repeat center center;
+    width: 150px;
+    height: 150px;
+    top: 0;
+    left: 30px
+  }
+  .services li.dev:after
+  {
+    background-image: url(../images/web_dev.png);
+  }
+  .services li.design:after
+  {
+    background-image: url(../images/design.png);
+  }
+  .services li.branding:after
+  {
+    background-image: url(../images/brandings.png);
+  }
+  .services li.ux:after
+  {
+    background-image: url(../images/ux.png);
+  }
+
+  /* clients */
+
+  .section.clients .wrapper
+  {
+    width: 980px;
+    left: calc(50% - 490px);
+    padding-top: 400px
+  }
+  .bx-wrapper .bx-viewport{
+    background: transparent;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0
+  }
+  .section.clients li 
+  {
+    text-align: center;
+  }
+  .section.clients li img
+  {
+    display: inline-block;
+    width: 56%;
+  }
+  .bx-wrapper .bx-prev
+  {
+    background: url(../images/slidePrev.png) 0 0 no-repeat;
+  }
+  .bx-wrapper .bx-next
+  {
+    background: url(../images/slideNext.png) 0 0 no-repeat;
+  }
+
+  /* Find us */
+
+  #map
+  {
+    width: 100%;
+    height: 400px;
+    margin-top:200px;
+  }
+  #popup
+  {
+    font-family: 'museo_sans300';
+    text-align: left;
+  }
+
+  /* Contact */
+
+  #contact
+  {
+    margin: 200px auto 0;
+    max-width: 435px;
+  }
+  #contact input,#contact textarea
+  {
+    height: 55px;
+    width: 100%;
+    border: 2px solid #cccccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding-left: 18px;
+    line-height: 50px;
+    font-size: 20px
+  }
+  #contact textarea
+  {
+    height: 155px;
+    line-height: 25px;
+    padding-top: 12px
+  }
+  #contact .field
+  {
+    margin-bottom: 20px
+  }
+
+  #contact ::-webkit-input-placeholder 
+  {
+    color:#414042;
+    font-family: 'museo_sans300';
+    font-size: 20px
+  }
+  #contact ::-moz-placeholder
+  {
+    color:#414042;
+    font-family: 'museo_sans300';
+    font-size: 20px
+  }
+  #contact :-moz-placeholder
+  {
+    color:#414042;
+    font-family: 'museo_sans300';
+    font-size: 20px
+  }
+  #contact :-ms-input-placeholder
+  {
+    color:#414042;
+    font-family: 'museo_sans300';
+    font-size: 20px
+  }
+  #contact button
+  {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    background: #d83454;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    border: 0;
+    font-family: 'museo_sans300';
+    border-radius: 3px;
+    margin-bottom: 34px;
+  }
+
+
+
+  /* Make it response */
+
+  @media (max-width: 1199px)
+  {
+    .section.design .wrapper,
+    .section.build .wrapper,
+    .section.both .wrapper
+    {
+      background-position: center 25%;
+    }
+    .section h1
+    {
+      top: 50px
+    }
+    .services ul {
+      padding-top: 170px;
+    }
+    .section.clients .wrapper {
+      padding-top: 300px;
+    }
+    #map
+    {
+      height: 300px;
+      margin-top:150px;
+    }
+    #contact
+    {
+      margin-top: 130px
+    }
+  }
+  @media (max-width: 1023px)
+  {
+    .section.header h3 {
+      bottom: 300px;
+    }
+    .section.design .wrapper,
+    .section.build .wrapper,
+    .section.both .wrapper
+    {
+      background-position: center 35%;
+    }
+    .section h2 {
+
+      bottom: 230px;padding-left: calc( 50% - 210px );padding-right: calc( 50% - 210px );box-sizing: border-box;}
+      .section .next {
+        bottom: 70px;
+      }
+      .services ul
+      {    width: 600px;
+        margin: 0 auto;
+      }
+      .services li {
+        width: 100%;
+        height: 195px;
+        position: relative;
+        padding-top: 0px;
+        float: none;
+        text-align: left;
+      }
+      .services li span {
+        display: inline-block;
+        margin-left: 226px;
+        margin-top: 80px;
+        text-align: left;
+      }
+      .section.services .wrapper,
+      .section.clients .wrapper
+      {
+        width: 100%;
+        left: 0;
+      }
+      .section.clients .wrapper {
+        padding-top: 400px;
+      }
+      #map
+      {
+        height: 600px;
+        margin-top:200px;
+      }
+      #contact textarea {
+        height: 400px;
+      }
+    }
+    @media (max-width: 767px)
+    {
+      .section.header h3 {
+        bottom: 187px;
+      }
+      .section.header .wrapper {
+       background-position: center 20%;
+     }
+     .section.design .wrapper, .section.build .wrapper, .section.both .wrapper {
+      background-position: center 20%;
+      background-size: contain;
+    }
+    .section h2 {
+      bottom: 162px;
+    }
+    .services li {
+
+      height: 73px;
+    }
+    .services li:after {
+      width: 0px;
+      height: 0px;
+    }
+    .services li span {
+      display: inline-block;
+      margin-left: 42px;
+      margin-top: 0px;
+      text-align: left;
+    }
+    .services ul {
+      padding-top: 160px;
+    }
+    .section.clients .wrapper {
+      padding-top: 300px;
+    }
+    #map
+    {
+      height: 225px;
+    }
+    #contact {
+      max-width: 285px;
+    }
+    #contact textarea {
+      height: 100px;
+    }
+  }

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
+<head>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+   <title>Example</title>
+   <link href='css/jquery.fullpage.min.css' rel='stylesheet' type='text/css' media='all' />
+   <link href='css/jquery.bxslider.css' rel='stylesheet' type='text/css' media='all' />
+   <link href='css/style.css' rel='stylesheet' type='text/css' media='all' />
+</head>
+<body>
+   <div id="wrapper">
+      <div class="section header">
+         <div class="wrapper">
+            <h3><span>A team of self confessed geeks who are all about great digital design</span></h3>
+            <a href="#section2" class="next"></a>
+         </div>
+      </div>
+      <div class="section design">
+         <div class="wrapper">
+            <h2>Some agencies love <span>design</span>, but don’t know how to build</h2>
+            <a href="#section3" class="next shadow"></a>
+         </div>
+      </div>
+      <div class="section build">
+         <div class="wrapper">
+            <h2>Some agencies know how to <span>build</span> but can’t do design</h2>
+            <a href="#section4" class="next shadow"></a>
+         </div>
+      </div>
+      <div class="section both">
+         <div class="wrapper">
+            <h2>We love <span>both</span></h2>
+            <a href="#section5" class="next shadow"></a>
+         </div>
+      </div>
+      <div class="section services">
+         <div class="wrapper">
+            <h1>Services</h1>
+            <ul>
+               <li class="dev"><span>Web Development</span></li>
+               <li class="design"><span>Design</span></li>
+               <li class="branding"><span>Branding</span></li>
+               <li class="ux"><span>UX Research</span></li>
+            </ul>
+            <a href="#section6" class="next black"></a>
+         </div>
+      </div>
+      <div class="section clients">
+         <div class="wrapper">
+            <h1>Clients</h1>
+            <ul id="clients">
+               <li><img src="images/client1.jpg" /></li>
+               <li><img src="images/client2.jpg" /></li>
+               <li><img src="images/client3.jpg" /></li>
+               <li><img src="images/client1.jpg" /></li>
+            </ul>
+            <a href="#section7" class="next black"></a>
+         </div>
+      </div>
+      <div class="section find-us">
+         <div class="wrapper">
+            <h1>How to find us</h1>
+            <div id="map"></div>
+            <a href="#section8" class="next black"></a>
+         </div>
+      </div>
+      <div class="section contact">
+         <div class="wrapper">
+            <h1>Contact</h1>
+            <div id="contact">
+               <form action="">
+                  <div class="field">
+                     <input type="text" placeholder="Name" />
+                  </div>
+                  <div class="field">
+                     <input type="text" placeholder="Email" />
+                  </div>
+                  <div class="field">
+                     <textarea placeholder="Message"></textarea>
+                  </div>
+                  <button type="submit">Send Message!</button>
+               </form>
+               <p>Or phone on: 01923 220121</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script type="text/javascript" src="js/lib/jquery-1.12.1.min.js"></script>
+   <script type="text/javascript" src="js/lib/jquery.fullpage.min.js"></script>
+   <script type="text/javascript" src="js/lib/jquery.bxslider.min.js"></script>
+   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+   <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
